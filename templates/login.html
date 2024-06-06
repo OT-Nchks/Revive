@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="Sleep, Insomnia, Sleep App, Sleep Tracking, Meditation, Mental health, Mindfulness, Stress and Anxiety"/>
+	<meta name="description" content="Revive is designed to provide comprehensive support and guidance for individuals struggling with insomnia. Leveraging cutting-edge technology and evidence-based techniques, Revive aims to empower users to understand, manage, and improve their sleep patterns effectively."/>
+	<meta name="author" content="Revive"/>
+
+    <title>Revive | Your Personal Sleep Companion | Awaken Your Vitality. </title>
+
+    <link rel="icon" href="images/favicon-revive.png" type="image/png">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="bootstrap.css" rel="stylesheet">
+
+    		<!--google fonts link-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+        <style>
+         
+            body{
+                font-family:poppins, sans-serif;
+               background-image: url("images/bg2.PNG");
+                background-repeat: no-repeat;
+                background-position: center;
+                /*box-shadow:15px 15px 30px 0 rgb(118, 110, 100) inset, -15px -15px 30px 0 rgb(118, 110, 100) inset;*/
+            }
+
+            .header{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.5%;
+                width:100%;
+                z-index:1000;
+                backdrop-filter: blur(10px);
+            }
+
+            .revive-logo{
+                max-width:160px;
+                height:auto;
+            }
+
+            .nav-links{
+                display:none;
+            }
+
+            .blank{
+                height:10px;
+            }
+
+            .form-container{
+              justify-content:center;
+                align-items:center;
+              transition:height .2s ease;
+                overflow:hidden;
+                position:relative;
+                border: 2px solid rgba(141, 127, 117,0.2);
+                align-items: center;
+                border-radius: 20px;
+               background:rgba(141, 127, 117,0.2); 
+               backdrop-filter: blur(12px);
+               z-index:1000;
+                padding:30px;
+            }
+
+            .form-container h2{
+                font-size:2.6em;
+                text-align:center;
+                color:#d7cdbb;
+            }
+            .form-container h6{
+                font-size:.8em;
+                color:#d7cdbb;
+                letter-spacing: .2em;
+            }
+            .form-group{
+                position:relative;
+                width:100%;
+                height:50px;
+                border-bottom: 2px solid #e0dacf;
+                margin:30px 0;
+            }
+            .form-group label{
+                position:absolute;
+                top:50%;
+                left:5px;
+                transform:translateY(-50%);
+                font-size:.9em;
+                color:#d7cdbb;
+                font-weight:400;
+                pointer-events: none;
+                transition:0.5s;
+            }
+            .form-group input{
+                width:100%;
+                height:100%;
+                background:transparent;
+                border:none;
+                outline:none;
+                font-size:1em;
+                color:#d7cdbb;
+                font-weight:600;
+                padding:0 25px 0 3px;
+            }
+            .form-group .icon{
+                position:absolute;
+                right:5px;
+                font-size:1.2em;
+                color:#d7cdbb;
+                line-height: 57px;
+            }
+            .form-group input:focus ~ label{
+                top:-5px;
+            }
+            .form-group input:valid ~ label{
+                top:-5px;
+            }
+
+            .btn1{
+                width:100%;
+                height:45px;
+                background:rgb(146, 159, 179);
+                border:none;
+                border-radius:20px;
+                cursor:pointer;
+                font-size:1em;
+                color:white;
+                font-weight:500;
+            }
+
+             .hr{
+                display: flex;
+                flex-basis: 100%;
+                align-items: center;
+                color: #d7cdbb;
+                margin: 8px 0px;
+            }
+            .hr span{
+                font-size:14px;
+            }
+            .hr:before, .hr:after {
+                content: "";
+                flex-grow: 1;
+                background: #d7cdbb;
+                height: 1px;
+                font-size: 0px;
+                line-height: 0px;
+                margin: 0px 8px;
+            }
+
+            .btn2{
+                width:100%;
+                height:45px;
+                border: 2px solid rgba(255,255,255,0.7);
+               background:rgba(177, 160, 148, 0.2); 
+               backdrop-filter: blur(20px);
+                border-radius:20px;
+                cursor:pointer;
+                font-size:.9em;
+                color:white;
+                font-weight:500;
+            }
+            .btn2 .icon2{
+                position: relative;
+                left:-10px;
+                font-size:1.1em;
+                color:#d7cdbb;
+                line-height: 27px;
+            }
+            .btn2 a{
+                color:white;
+                text-decoration: none;
+                font-weight:600; 
+            }
+
+            .login-register{
+                font-size:0.9em;
+                color:#d7cdbb;
+                text-align: center;
+                font-weight:500;
+                margin:25px 0 10px;
+            }
+            .login-register p a{
+                color:#93b2d7;
+                text-decoration: none;
+                font-weight:600;  
+            }
+            .login-register p a:hover{
+                text-decoration: underline;
+            }
+
+            .forget-pass a{
+                color:#93b2d7;
+                font-size:13px;
+                text-decoration: none;
+            }
+            .forget-pass a:hover{
+                text-decoration: underline;
+                bottom:25px;
+            }
+
+            @media (max-width: 990.98px) {
+    .form-container{
+        width: 90%;
+        margin: auto;
+            }
+
+}
+
+
+        </style>
+</head>
+<body>
+
+    <div class="revive main-container">
+
+        <!--NAV SECTION-->
+                    
+                            <div class="row header">
+                                <nav class="nav">
+                                    <div class="col-2 revive-logo">
+                                        <a href="index.html"><img src='images/logo.PNG' class="revive-logo"/></a>
+                                    </div>
+
+                                    <div class="col-10 nav-main" id="nav">
+                                                    <ul class="nav-links">
+                                                        <li><a href="#">About</a></li>
+                                                        <li><a href="#">Portfolio</a></li>
+                                                        <li><a href="#">Services</a></li>
+                                                        <li><a href="#">Contact</a></li>
+                                                    </ul>
+                                    </div>
+                                    </div>
+
+
+                            <div class="row blank"></div>
+                            
+        <!--FORM  SECTION-->
+        <div class="row">
+
+            <div class="col-md-4"></div>
+                
+
+                    <div class="col-md-4  form-container login animate__animated animate__fadeIn animate__delay-0.9s">
+                    
+                        <h6 class="text-center">LOG IN</h6>
+                        <h2>Welcome back!</h2>
+                        
+                        <form method="get" action="index.html" id="loginForm">
+        
+                            <div class="form-group">
+                                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                                <input type="text" name="email" id="email" required/>
+                                <label for="email">Email Address</label>
+                            </div>
+        
+                            <div class="form-group">
+                                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                                <input type="password" id="password" required />
+                                <label for="password">Password (6+ characters)</label>
+                            </div>
+    
+                            <div class="forget-pass"><a href="#">Forgot Password?</a></div>
+        
+                            <button type="submit" class="btn1 my-3" id="btn1">Log in</button>
+        
+                            <div class="hr my-2">&nbsp;&nbsp; <span>or </span>&nbsp;&nbsp;</div>
+                              
+        
+                            <button type="submit" class="btn2 my-2"><span class="icon2"><ion-icon name="logo-apple"></ion-icon></span><a href="https://support.apple.com/en-ng/111001">Connect with Apple</a></button>
+                            <button type="submit" class="btn2 my-2"><span class="icon2"><ion-icon name="logo-google"></ion-icon></span><a href="https://accounts.google.com.ng/">Connect with Google</a></button>
+                            <button type="submit" class="btn2 my-2"><span class="icon2"><ion-icon name="logo-facebook"></ion-icon></span><a href="https://web.facebook.com/login.php/?_rdc=1&_rdr">Connect with Facebook</a></button>
+                        </form>
+                            </div>
+                            
+        
+                            <div class="login-register">
+                                <p>Don't have an account? <a href="signup.html" class="register-link">Sign Up</a>.</p>
+                             </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4"></div>
+      </div>
+                             
+
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+          
+          $(document).ready(function() {
+            $('#loginForm').submit(function(event) {
+               
+                var email = $('#email').val().trim();
+                var password = $('#password').val().trim();
+
+                if (email === '' || password === '') {
+                    event.preventDefault(); // Prevent form submission if any field is empty
+                    alert('Please fill in all required fields.');
+                }
+            });
+        });
+
+ 
+
+    </script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
