@@ -1,4 +1,4 @@
-Revive - Your Personal Sleep Companion
+<a href="php/index.php">Revive</a> - Your Personal Sleep Companion
 
 DESCRIPTION:
 Revive is not just another sleep app; it's your personalized sleep sanctuary. It is designed to provide comprehensive support and guidance for individuals struggling with insomnia. Leveraging cutting-edge technology, Revive aims to empower users to understand, manage, and improve their sleep patterns effectively. 
