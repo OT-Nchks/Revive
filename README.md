@@ -1,5 +1,5 @@
-<h4><a href="php/index.php">Revive</a> - Your Personal Sleep Companion</h4>
-
+<h4>Revive - Your Personal Sleep Companion</h4>
+<p><a href="oluomachi.com/Revive/php/index.php">CLICK TO VIEW SITE</a></p>
 DESCRIPTION:
 Revive is not just another sleep app; it's your personalized sleep sanctuary. It is designed to provide comprehensive support and guidance for individuals struggling with insomnia. Leveraging cutting-edge technology, Revive aims to empower users to understand, manage, and improve their sleep patterns effectively. 
 Drift into a world of deep, rejuvenating sleep with Revive, and wake up refreshed, energized, and ready to conquer the day.
