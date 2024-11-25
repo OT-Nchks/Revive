@@ -1,6 +1,6 @@
 # Revive - Your Personal Sleep Companion
 
-View Live Site: [Revive](https://www.oluomachi.com/Revive/php/index.php)
+View Live Site: [Revive](https://www.oluomachi.com/Revive)
 
 Revive is not just another sleep app; it's your personalized sleep sanctuary. It is designed to provide comprehensive support and guidance for individuals struggling with insomnia. Leveraging cutting-edge technology, Revive aims to empower users to understand, manage, and improve their sleep patterns effectively.
 
